@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta content="telephone=no,email=no" name="format-detection">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,Chrome=1">
+    <title>子曰 - 面向中小网站开发者的无门槛评论系统</title>
+    <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+    <script src="./js/Valine.min.js"></script>
+    <link href="css/style.css" rel="stylesheet" type="text/css" media="all">
+</head>
+
+<body>
+    <div class="market"></div>
+    <header>
+        <div class="container">
+            <a href="./" class="logo">子曰</a>
+            <span class="sub">面向中小网站开发者的无门槛评论系统</span>
+        </div>
+    </header>
+    <div class="container">
+        <div class="placeholder"></div>
+        <div class="content">
+            <div class="comment"></div>
+        </div>
+    </div>
+    <div class="copy">
+        &copy; 2018 <a href="https://github.com/fatdoge" target="_blank">超威蓝猫</a>
+    </div>
+    <script>
+        var ziyue = new Ziyue();
+        ziyue.init({
+            el: '.comment',
+            app_id: 'pEUNSmIOUPk1jIRvWfEqdRLc-gzGzoHsz',
+            app_key: 'NupnAdXxRyow0Y5PeHdhqNNK',
+            placeholder: '开始你的表演',
+            path: window.location.pathname,
+            avatar:'mm', // 1.1.7 新增(mm/identicon/monsterid/wavatar/retro)
+            // guest_info: ['nick'] // 默认 ['nick', 'mail', 'link']
+        })
+
+
+    </script>
+</body>
+
+</html>
