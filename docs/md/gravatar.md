@@ -1,6 +1,6 @@
 # **头像设置**
 
-#### Valine 使用的是Gravatar 作为评论列表头像(感谢```gravatar.loli.net```提供的镜像服务)。
+#### Ziyue 使用的是Gravatar 作为评论列表头像(感谢```gravatar.loli.net```提供的镜像服务)。
 #### 目前有以下7种可选值:
 
 参数值 | 表现形式 | 备注
@@ -18,7 +18,7 @@ hide | | 不显示头像
 !> 如果参数avatar的值不等于列表中的任意一种，则默认为mm。
 
 ```
-new Valine({
+new Ziyue({
     ...
     avatar:'' // (''/mm/identicon/monsterid/wavatar/retro/hide)
 });

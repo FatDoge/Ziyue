@@ -8,8 +8,8 @@
 ```
 <head>
     ...
-    <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
-    <script src='//unpkg.com/valine/dist/Valine.min.js'></script>
+    <script src=".../js/av-min.js"></script>
+    <script src='.../js/Ziyue.min.js'></script>
     ...
 </head>
 <body>
@@ -34,7 +34,7 @@
 ##### 修改初始化对象中的appId和appKey的值为上面刚刚获取到的值即可(其他可以默认)。
 
 ```
-new Valine({
+new Ziyue({
     el: '#comment' ,
     notify:false, 
     verify:false, 
@@ -49,9 +49,9 @@ new Valine({
 
 ## npm安装
 
-##### Valine 现已发布到npm，可以直接用命令安装：
+##### Ziyue 现已发布到npm，可以直接用命令安装：
 ```
-npm install valine --save
+npm install ziyue --save
 ```
 
 ## 评论数据管理

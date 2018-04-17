@@ -1,10 +1,10 @@
 # **配置项**
 
-#### Valine 支持两种不同的初始化方式。一种是构造方法初始化对象，另一种是调用```init```方法：
+#### Ziyue 支持两种不同的初始化方式。一种是构造方法初始化对象，另一种是调用```init```方法：
 ```
 <!-- 方法 1 -->
 <script>
-    new Valine({
+    new Ziyue({
         el:'#comment',
         appId:'your appid',
         appKey:'your appkey'
@@ -13,8 +13,8 @@
 
 <!-- 方法 2 -->
 <script>
-    var valine = new Valine();
-    valine.init({
+    var ziyue = new Ziyue();
+    ziyue.init({
         el:'#comment',
         appId:'your appid',
         appKey:'your appkey'
@@ -28,14 +28,14 @@
 - 默认值:#comment
 - 必要性:true
 
-#### Valine 的初始化挂载器。可以是一个CSS 选择器，也可以是一个实际的HTML元素。
+#### Ziyue 的初始化挂载器。可以是一个CSS 选择器，也可以是一个实际的HTML元素。
 ```
-new Valine({
+new Ziyue({
     el:'#comment'
 })
 
 // or 
-new Valine({
+new Ziyue({
     el:document.getElementById('comment')
 })
 ```
@@ -53,7 +53,7 @@ new Valine({
 > 参考获取appid和appkey。
 
 ```
-new Valine({
+new Ziyue({
     appId:'your leancloud appid'
 })
 ```
@@ -67,7 +67,7 @@ new Valine({
 
 > 参考获取appid和appkey。
 ```
-new Valine({
+new Ziyue({
     appKey:'your leancloud appkey'
 })
 ```
@@ -78,12 +78,12 @@ new Valine({
 - 默认值:cn
 - 必要性:false
 
-#### 存储节点：在```Valine```中初始化时默认遵循```Leancloud SDK```的节点规则(默认中国大陆节点)，可选值：
+#### 存储节点：在```Ziyue```中初始化时默认遵循```Leancloud SDK```的节点规则(默认中国大陆节点)，可选值：
 - ```cn``` - 中国大陆节点
 - ```us``` - 海外节点
 
 ```
-new Valine({
+new Ziyue({
     region:'cn'
 })
 ```
@@ -99,7 +99,7 @@ new Valine({
 
 #### 评论框```占位提示符```。
 ```
-new Valine({
+new Ziyue({
     placeholder:'Just so so'
 })
 ```
@@ -112,7 +112,7 @@ new Valine({
 
 #### 评论回复邮件提醒，请参考邮件提醒配置。
 ```
-new Valine({
+new Ziyue({
     notify:false
 })
 ```
@@ -127,7 +127,7 @@ new Valine({
 
 #### 验证码服务。
 ```
-new Valine({
+new Ziyue({
     verify:false
 })
 ```
@@ -147,7 +147,7 @@ new Valine({
 !> - 如果值为window.location.href，可能会出现随便加不同参数进入该页面，而被判断成新页面的情况。
 
 ```
-new Valine({
+new Ziyue({
     path:window.location.pathname
 })
 ```
@@ -170,7 +170,7 @@ new Valine({
 - hide (v1.1.8-beta+ 开始支持)
 #### 更多信息，请查看头像配置。
 ```
-new Valine({
+new Ziyue({
     avatar:`mm`
 })
 ```
@@ -186,7 +186,7 @@ new Valine({
 #### Gravatar头像镜像，默认用的```gravatar.loli.net```
 
 ```
-new Valine({
+new Ziyue({
     avatar_cdn:'https://gravatar.loli.net/avatar/'
 })
 ```
@@ -201,7 +201,7 @@ new Valine({
 
 #### 评论者相关属性。
 ```
-new Valine({
+new Ziyue({
     guest_info:['nick'] // 只想要昵称
 })
 ```
@@ -216,7 +216,7 @@ new Valine({
 
 #### 评论列表分页，每页条数。
 ```
-new Valine({
+new Ziyue({
     pageSize:10
 })
 ```
@@ -235,8 +235,20 @@ new Valine({
 
 #### 如需自定义语言，请参考i18n。
 ```
-new Valine({
+new Ziyue({
     lang:'zh-cn'
+})
+```
+## leancloud
+
+- 类型:Bool
+- 默认值:true
+- 必要性:false
+
+#### 更换数据存储商家(Leancloud)
+```
+new Ziyue({
+    leancloud:'true'
 })
 ```
 

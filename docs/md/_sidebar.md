@@ -6,3 +6,4 @@
 * [邮件提醒](/email)
 * [主题开发](/skin)
 * [demo](/demo)
+* [致谢](/thanks)

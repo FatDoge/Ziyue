@@ -11,7 +11,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=Edge,Chrome=1">
     <title>子曰 - 面向中小网站开发者的无门槛评论系统</title>
     <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
-    <script src="./js/Valine.min.js"></script>
+    <script src="./js/Ziyue.min.js"></script>
     <link href="css/style.css" rel="stylesheet" type="text/css" media="all">
 </head>
 
@@ -36,12 +36,14 @@
         var ziyue = new Ziyue();
         ziyue.init({
             el: '.comment',
+            leacloud: true,
             app_id: 'pEUNSmIOUPk1jIRvWfEqdRLc-gzGzoHsz',
             app_key: 'NupnAdXxRyow0Y5PeHdhqNNK',
             placeholder: '开始你的表演',
             path: window.location.pathname,
             avatar:'mm', // 1.1.7 新增(mm/identicon/monsterid/wavatar/retro)
             // guest_info: ['nick'] // 默认 ['nick', 'mail', 'link']
+            //lang:'en'
         })
 
 

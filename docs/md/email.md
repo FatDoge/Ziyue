@@ -1,4 +1,4 @@
-# **Valine 评论系统中的邮件提醒设置**
+# **Ziyue 评论系统中的邮件提醒设置**
 
 ## 设置Leancloud
 
@@ -16,12 +16,12 @@
 <p><a href="你的网址首页链接" style="display: inline-block; padding: 10px 20px; border-radius: 4px; background-color: #3090e4; color: #fff; text-decoration: none;">马上查看</a></p>
 ```
 
-## 初始化Valine
+## 初始化Ziyue
 
-#### 设置```Valine```的```notify```为```true```即可打开邮件提醒。```v1.1.4-rc```以后的版本支持。
+#### 设置```Ziyue```的```notify```为```true```即可打开邮件提醒。```v1.1.4-rc```以后的版本支持。
 ```
 //
-var valine = new Valine({
+var ziyue = new Ziyue({
     el: '.comment',
     notify: true, // 邮件提醒!!!
     verify: true, // 验证码
