@@ -1,0 +1,8 @@
+* [首页](/)
+* [快速开始](/quickstart)
+* [配置项](/settingitems)
+* [多语言支持](/i18n)
+* [头像设置](/gravatar)
+* [邮件提醒](/email)
+* [主题开发](/skin)
+* [demo](/demo)

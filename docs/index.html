@@ -13,10 +13,14 @@
   <script>
     window.$docsify = {
       name: '子曰',
-      repo: ''
+      repo: '',
+      loadSidebar: true
     }
   </script>
   <script src="./docsify.min.js"></script>
+  <script src="./emoji.js"></script>
+  <script src="//unpkg.com/docsify/lib/docsify.min.js"></script>
+  <script src="//unpkg.com/docsify-pagination/dist/docsify-pagination.min.js"></script>
   <script>
       if (typeof navigator.serviceWorker !== 'undefined') {
           navigator.serviceWorker.register('sw.js')
